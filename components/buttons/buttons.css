@@ -1,0 +1,12 @@
+/* Regular button */
+.regularBtn {
+  background-color: rgb(255, 7, 131);
+  border: 0px;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.regularBtn:hover {
+  background-color: rgba(255, 7, 131, 0.822);
+}
