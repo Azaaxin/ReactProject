@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+.head {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 75px;
+  background-color: #1a1a1a;
+  gap: 0px 0px;
+  grid-template-areas: "header_logo header_browse_menu header_search_area header_search_area header_user_area header_user_area";
+}
+.header_search_area {
+  grid-area: header_search_area;
+}
+.header_user_area {
+  grid-area: header_user_area;
+}
+.header_browse_menu {
+  grid-area: header_browse_menu;
+}
+.header_logo {
+  grid-area: header_logo;
+}
+.header_search_area,
+.header_user_area,
+.header_browse_menu,
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+.header_user_area,
+.header_browse_menu {
+  /* font-family: "Inconsolata", monospace; */
+  white-space: nowrap;
+  text-align: left;
+  font-family: Consolas;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+.header_logo {
+  white-space: nowrap;
+  text-align: left;
+  font-family: Segoe MDL2 Assets;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(198, 0, 192, 1);
+}
+.header_user_area {
+  justify-content: flex-end;
+  margin: 0px 10%;
+}
