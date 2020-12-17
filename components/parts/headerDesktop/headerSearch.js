@@ -1,8 +1,9 @@
 import React from "react";
+import HeaderSearchComponent from "../../searchBox/headerSearch";
 export default function Hsearch({ name, desc, profile }) {
   return (
     <>
-      <div class="header_search_area">Hello</div>
+      <HeaderSearchComponent placeholder="Search"></HeaderSearchComponent>
     </>
   );
 }

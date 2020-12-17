@@ -4,13 +4,13 @@ import Hlinks from "./headerLinks";
 import Huser from "./headerUser";
 import Hlogo from "./headerLogo";
 import Hsearch from "./headerSearch";
-export default function Header({ logo, links, desc, id, profile }) {
+export default function Header({ logo, links, desc, id, avatarUrl }) {
   return (
     <div className="head">
       <Hlogo />
       <Hlinks text={links} />
       <Hsearch />
-      <Huser />
+      <Huser avatarUrl={avatarUrl} />
     </div>
   );
 }

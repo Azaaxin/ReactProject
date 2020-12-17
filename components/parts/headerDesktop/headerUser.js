@@ -1,8 +1,14 @@
 import React from "react";
-export default function Huser({ name, desc, profile }) {
+export default function Huser({ name, onClick, avatarUrl }) {
   return (
     <>
-      <div class="header_user_area">ID</div>
+      <div className="header_user_area">
+        <div
+          onClick={onClick}
+          className="userFavicon"
+          style={{ backgroundImage: `url(${avatarUrl})` }}
+        ></div>
+      </div>
     </>
   );
 }
