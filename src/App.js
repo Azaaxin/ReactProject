@@ -5,6 +5,7 @@ import Header from "../components/parts/headerDesktop/header";
 export default function App() {
   return (
     <div className="App">
+      <Header links="Browse" />
       <Cards
         name="Azaaxin"
         avatar="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"
