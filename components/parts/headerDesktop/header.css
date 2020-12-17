@@ -43,11 +43,12 @@
 .header_logo {
   white-space: nowrap;
   text-align: left;
-  font-family: Segoe MDL2 Assets;
+  font-family: Consolas;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 20px;
   color: rgba(198, 0, 192, 1);
+  font-family: Consolas;
 }
 .header_user_area {
   justify-content: flex-end;

@@ -8,6 +8,7 @@ export default function App() {
   return (
     <div className="App">
       <Header
+        logo="□□□□"
         links="Browse" // Wants to add object as input
         avatarUrl={avatar}
       />

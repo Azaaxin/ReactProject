@@ -7,7 +7,7 @@ import Hsearch from "./headerSearch";
 export default function Header({ logo, links, desc, id, avatarUrl }) {
   return (
     <div className="head">
-      <Hlogo />
+      <Hlogo logo={logo} />
       <Hlinks text={links} />
       <Hsearch />
       <Huser avatarUrl={avatarUrl} />
