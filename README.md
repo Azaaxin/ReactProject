@@ -1,2 +1,2 @@
 # ReactProject
-Created with CodeSandbox
+Frontend design sketch for a school project.
