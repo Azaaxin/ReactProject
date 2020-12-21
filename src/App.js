@@ -15,8 +15,7 @@ export default function App() {
 
   const reload = () => {
     const notes = getNotes;
-    setNotes([...notes]);
-    console.log([...notes]);
+    setNotes([...notes()]);
   };
 
   return (
