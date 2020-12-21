@@ -3,6 +3,7 @@ import { getNotes } from "./helpers/notes.js";
 import "./styles.css";
 import PanelParts from "./components/panel/panel";
 import Textarea from "./components/textarea/textareaclass";
+import {ToastsContainer, ToastsStore} from 'react-toasts';
 export default function App() {
   //localStorage.getItem("LesoNotes");
 
@@ -28,6 +29,7 @@ export default function App() {
         id={1}
       />
       <Textarea refreshList={reload} placeholder="Write something" />
+      <ToastsContainer store={ToastsStore}/>
     </div>
   );
 }

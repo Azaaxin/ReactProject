@@ -11,11 +11,13 @@ export default function Panel({
   notes,
   refreshList
 }) {
+
+
   return (
     <div className="panel" onCLick={refreshList}>
       <span>Saved notes</span>
       <button onClick={() => createNew(refreshList, true)}>Create new</button>
-      {notes.map((note) => (
+      { notes.map((note) => (
         <PanelParts
           onClick={() => selectNote(note)}
           name={note.title}
@@ -26,3 +28,4 @@ export default function Panel({
     </div>
   );
 }
+
