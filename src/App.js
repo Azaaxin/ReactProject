@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { getNotes } from "./helpers/notes.js";
+import "./styles.css";
+import PanelParts from "./components/panel/panel";
+import Textarea from "./components/textarea/textareaclass";
+export default function App() {
+  //localStorage.getItem("LesoNotes");
 
-function App() {
+  const [notes, setNotes] = useState([]);
+
+  useEffect(() => {
+    const notes = getNotes;
+    setNotes(notes);
+  }, [setNotes]);
+
+  const reload = () => {
+    const notes = getNotes;
+    setNotes([...notes]);
+    console.log([...notes]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Layout">
+      <PanelParts
+        notes={notes}
+        name="SandCastle"
+        desc="Rolling around.."
+        //refreshList={forceUpdate}
+        id={1}
+      />
+      <Textarea refreshList={reload} placeholder="Write something" />
     </div>
   );
 }
-
-export default App;
