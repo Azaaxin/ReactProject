@@ -24,7 +24,7 @@ export default function App() {
         notes={notes}
         name="SandCastle"
         desc="Rolling around.."
-        //refreshList={forceUpdate}
+        refreshList={reload}
         id={1}
       />
       <Textarea refreshList={reload} placeholder="Write something" />

@@ -33,3 +33,9 @@ export function updateNote(id, title, body) {
   notes.splice(indexToUpdate, 1, note)
   return notes
 }
+
+export function deleteNote(id) {
+  const indexToDelete = notes.findIndex((note) => note.id === id)
+  notes.splice(indexToDelete, 1)
+  return true
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import PanelParts from "./panelParts";
-
+import { createNew } from "../functions/functions";
 import { selectNote } from "../functions/selectedNote";
 import "./panel.css";
 export default function Panel({
@@ -9,11 +9,12 @@ export default function Panel({
   id,
   onClick,
   notes,
-  refreshPanel
+  refreshList
 }) {
   return (
-    <div className="panel" onCLick={refreshPanel}>
+    <div className="panel" onCLick={refreshList}>
       <span>Saved notes</span>
+      <button onClick={() => createNew(refreshList, true)}>Create new</button>
       {notes.map((note) => (
         <PanelParts
           onClick={() => selectNote(note)}
