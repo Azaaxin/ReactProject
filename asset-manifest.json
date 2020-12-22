@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ReactProject/static/css/main.1caf40e3.chunk.css",
-    "main.js": "/ReactProject/static/js/main.7d902853.chunk.js",
-    "main.js.map": "/ReactProject/static/js/main.7d902853.chunk.js.map",
-    "runtime-main.js": "/ReactProject/static/js/runtime-main.4710dc1b.js",
-    "runtime-main.js.map": "/ReactProject/static/js/runtime-main.4710dc1b.js.map",
-    "static/js/2.00510167.chunk.js": "/ReactProject/static/js/2.00510167.chunk.js",
-    "static/js/2.00510167.chunk.js.map": "/ReactProject/static/js/2.00510167.chunk.js.map",
-    "index.html": "/ReactProject/index.html",
-    "static/css/main.1caf40e3.chunk.css.map": "/ReactProject/static/css/main.1caf40e3.chunk.css.map",
-    "static/js/2.00510167.chunk.js.LICENSE.txt": "/ReactProject/static/js/2.00510167.chunk.js.LICENSE.txt",
-    "static/media/textarea.css": "/ReactProject/static/media/trash.50b853e1.svg"
+    "main.css": "/LesoNotes/static/css/main.e5c798fc.chunk.css",
+    "main.js": "/LesoNotes/static/js/main.7d902853.chunk.js",
+    "main.js.map": "/LesoNotes/static/js/main.7d902853.chunk.js.map",
+    "runtime-main.js": "/LesoNotes/static/js/runtime-main.229251fb.js",
+    "runtime-main.js.map": "/LesoNotes/static/js/runtime-main.229251fb.js.map",
+    "static/js/2.00510167.chunk.js": "/LesoNotes/static/js/2.00510167.chunk.js",
+    "static/js/2.00510167.chunk.js.map": "/LesoNotes/static/js/2.00510167.chunk.js.map",
+    "index.html": "/LesoNotes/index.html",
+    "static/css/main.e5c798fc.chunk.css.map": "/LesoNotes/static/css/main.e5c798fc.chunk.css.map",
+    "static/js/2.00510167.chunk.js.LICENSE.txt": "/LesoNotes/static/js/2.00510167.chunk.js.LICENSE.txt",
+    "static/media/textarea.css": "/LesoNotes/static/media/trash.50b853e1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4710dc1b.js",
+    "static/js/runtime-main.229251fb.js",
     "static/js/2.00510167.chunk.js",
-    "static/css/main.1caf40e3.chunk.css",
+    "static/css/main.e5c798fc.chunk.css",
     "static/js/main.7d902853.chunk.js"
   ]
 }
