@@ -6,9 +6,7 @@ import Textarea from "./components/textarea/textareaclass";
 import {ToastsContainer, ToastsStore} from 'react-toasts';
 export default function App() {
   //localStorage.getItem("LesoNotes");
-
   const [notes, setNotes] = useState([]);
-
   useEffect(() => {
     const notes = getNotes;
     setNotes(notes);

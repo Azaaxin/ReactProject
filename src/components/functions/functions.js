@@ -1,7 +1,6 @@
-import { createNote, getNotes, updateNote, identifyer, deleteNote } from "../../helpers/notes";
-import {ToastsContainer, ToastsStore} from 'react-toasts';
-import { selectNote, clickedId } from "../functions/selectedNote"
-import Userinfo, {MissingNotes} from "../panel/panelParts";
+import { createNote, getNotes, updateNote, deleteNote, updateStorage } from "../../helpers/notes";
+import {ToastsStore} from 'react-toasts';
+import {clickedId } from "../functions/selectedNote"
 const findByPropInObjectArray = (arr, prop) => match => arr.find(e => e[prop] === match);
 const findBody = findByPropInObjectArray(getNotes(), "body");
 
@@ -10,13 +9,12 @@ export const createNew = (refreshPanel, reload) => {
       if(reload){
         refreshPanel();
       }
-      console.log("Note run")
+      updateStorage("set", getNotes());
       ToastsStore.success("Successfully created note!")
 }
 
 export const deleteCurrent = (refreshPanel, reload) => {
       deleteNote(clickedId)
-      //findBody(getNotes().pop().body === a.innerHTML)
       if(reload){
         refreshPanel();
       }
@@ -38,12 +36,6 @@ const doneTyping = (refreshPanel) => {
   
 }
 export const whentyping = (refreshPanel, a)=>{
-    // createNote("Example note", a);
-    // refreshPanel();
 
-  // let typingTimer;
-  // let doneTypingInterval = 2000;
-  // clearTimeout(typingTimer);
-  // typingTimer = setTimeout(() => doneTyping(refreshPanel), doneTypingInterval);
   doneTyping(refreshPanel)
 }

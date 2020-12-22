@@ -14,7 +14,7 @@ export default function Panel({
 
 
   return (
-    <div className="panel" onCLick={refreshList}>
+    <div className="panel" onClick={refreshList}>
       <span>Saved notes</span>
       <button onClick={() => createNew(refreshList, true)}>Create new</button>
       { notes.map((note) => (
