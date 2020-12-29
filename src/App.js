@@ -5,7 +5,9 @@ import PanelParts from "./components/panel/panel";
 import Textarea from "./components/textarea/textareaclass";
 import {ToastsContainer, ToastsStore} from 'react-toasts';
 export default function App() {
-  //localStorage.getItem("LesoNotes");
+  if (localStorage.getItem("LesoNotes") === null) {
+    localStorage.setItem("LesoNotes", "[]");
+  }
   const [notes, setNotes] = useState([]);
   useEffect(() => {
     const notes = getNotes;
