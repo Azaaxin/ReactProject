@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/LesoNotes/static/css/main.e5c798fc.chunk.css",
-    "main.js": "/LesoNotes/static/js/main.7d902853.chunk.js",
-    "main.js.map": "/LesoNotes/static/js/main.7d902853.chunk.js.map",
+    "main.js": "/LesoNotes/static/js/main.b97f3de3.chunk.js",
+    "main.js.map": "/LesoNotes/static/js/main.b97f3de3.chunk.js.map",
     "runtime-main.js": "/LesoNotes/static/js/runtime-main.229251fb.js",
     "runtime-main.js.map": "/LesoNotes/static/js/runtime-main.229251fb.js.map",
     "static/js/2.00510167.chunk.js": "/LesoNotes/static/js/2.00510167.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.229251fb.js",
     "static/js/2.00510167.chunk.js",
     "static/css/main.e5c798fc.chunk.css",
-    "static/js/main.7d902853.chunk.js"
+    "static/js/main.b97f3de3.chunk.js"
   ]
 }
