@@ -60,7 +60,7 @@ export const updateStorage = (e, data) => {
 
 export function UpdateNoteFromStorage() {
   if (localStorage.getItem("LesoNotes") === null) {
-    localStorage.setItem("LesoNotes", "[]");
+    localStorage.setItem("LesoNotes", '[{"id":1,"title":"Write Something","body":"Write Something"}]');
   }
   if(notes !== undefined){
     notes.length = 0;
